@@ -82,10 +82,71 @@
 //console.log("O preço final com desconto é: ",precoFinal)
 
 //exercicio2
-const token = 100;
-const usuariologado = 1
-const transacaoautorizada = usuariologado === 1 && token >=10;
-console.log("transação autorizada com sucesso")
+//const token = 100;
+//const usuariologado = 1
+//const transacaoautorizada = usuariologado === 1 && token >=10;
+//console.log("transação autorizada com sucesso")
 
+//estrutura condicional
 
+//if
+if(true){
+    console.log("é verdadeiro")
+}
 
+//if else
+let nome = "fiap";
+if (nome=="fiap"){
+    console.log("Nome verdadeiro")
+}else{
+    console.log("nome errado")
+}
+
+//if encadeado ou aninhado
+let idade = 60;
+
+if(idade<=13){
+    console.log("é uma criança")
+}else if(idade>13 && idade<=18){
+    console.log("é um adolescente")
+}else if(idade>18 && idade <= 59) {
+    console.log("é um adulto")
+}else{
+    console.log("é um idoso")
+}
+
+//switch case
+
+let times = "santos";
+
+switch(times){
+    case "santos":
+        console.log("um time idoso")
+        break;
+    case "são paulo":
+        console.log("Time panetone")
+        break;
+    case "palmeiras":
+        console.log("sem mundial")
+        break;
+    case "corinthians":
+        console.log("um time de tradição")
+        break;
+    default:
+        console.log("é tão ruim quanto a seleção brasileira")
+}
+
+//ternaria
+
+let salario = 100;
+let resultado = salario == 100 ? "salario certo":"salarioerrado"
+console.log(resultado)
+
+let usuario = "fiap";
+let userlogado =usuario ==="fiap"?"logado com sucesso":"usuario invalido"
+console.log(userlogado)
+
+function verificarparimpar(numero){
+    return numero % 2 === 0 ? "par":"impar"
+}
+console.log(verificarparimpar(9))
