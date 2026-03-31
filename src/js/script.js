@@ -51,26 +51,41 @@
 
 // Operadores aritmeticos
 
-const valor1 = 20;
-const valor2 = 10;
+//const valor1 = 20;
+//const valor2 = 10;
 
-console.log(valor1 + valor2);
-console.log(valor1 / valor2);
-console.log(valor1 - valor2);
-console.log(valor1 * valor2);
+//console.log(valor1 + valor2);
+//console.log(valor1 / valor2);
+//console.log(valor1 - valor2);
+//console.log(valor1 * valor2);
 
 //operadores logicos
 
-console.log(valor1 > valor2);
-console.log(valor1>10 && valor2 != 20);
+//console.log(valor1 > valor2);
+//console.log(valor1>10 && valor2 != 20);
 // && - E (os dois verdadeiros)   || - OU (um deles verdadeiro)
-console.log(valor2 > 5 || valor1 <50);
+//console.log(valor2 > 5 || valor1 <50);
 
 //operadores de comparação
-console.log(valor1 < valor2);
-console.log(valor1 >= valor2);
-console.log(valor1 <= valor2);
-console.log(valor1 != valor2);
-console.log(valor1 == valor2);
-console.log(valor1 === valor2);
-console.log("O valor é:",valor1)
+//console.log(valor1 < valor2);
+//console.log(valor1 >= valor2);
+//console.log(valor1 <= valor2);
+//console.log(valor1 != valor2);
+//console.log(valor1 == valor2);
+//console.log(valor1 === valor2);
+//console.log("O valor é:",valor1)
+
+//exercicio1
+//const P = 20;
+//const v = 10;
+//precoFinal =  P - v;
+//console.log("O preço final com desconto é: ",precoFinal)
+
+//exercicio2
+const token = 100;
+const usuariologado = 1
+const transacaoautorizada = usuariologado === 1 && token >=10;
+console.log("transação autorizada com sucesso")
+
+
+
