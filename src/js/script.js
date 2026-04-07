@@ -155,25 +155,58 @@
 //for - estrutura de repetição utilizada quando sabemos previamente quantas vezes o código vai ser executado
 
 //declaração, operação, incremento
+//ESTRUTURAS DE REPETIÇÃO(FOR)
+//for - sabemos a quantidade de vezes que o código vai executar
+//for ( i = 0, i <= 5, i++){
+  //  console.log("Numero: ", i);
+//}
 
-for(let i = 1; i<=5; i++){
-    console.log("numero: ", i);
+//const linguagens = ["java", "python", "C#", "PHP"];
+
+//for (let i=0; i < linguagens.length; i++){
+   // console.log("linguagens", i, ":", linguagens[i]);
+//}
+
+///const tecnologias = ["JS", "HTML", "CSS"]
+//for(const tech of tecnologias){
+    //console.log("estudando: ", tech)
+//}
+const carros = {marca: "Volks", modelo: "fusca", ano:1998};
+    for (let dados in carros){
+        console.log(dados, ";", carros)
+    } 
+//while - diferente do for o while não sabemos a quantidade de vezes que o código vai executar
+let i = 1;
+
+while(i <= 5){
+    console.log("contagem", i)
+    i++;
 }
 
-// for para array
+let numero;
 
-const linguagens = ["java", "python", "C#", "PHP"]
+while(numero != "0"){
+ numero = prompt("Digite um número( ou 0 para sair)");
+ console.log("eu sei o que você digitou: ", numero);
 
-for(let i=0; i < linguagens.length; i++){
-    console.log("linguagem", i, ":", linguagens[i]);
 }
+console.log("fim do programa")
 
-const tecnologias =["JS", "HTML", "CSS"]
-for(const tech of tecnologias){
-    console.log("Estudando",tech)
-}
 
-const carros = {marca:"Volks", modelo: "fusca", ano:1980}
-for (let dados in carros){
-    console.log(dados, ":", carros[dados])
-}
+let palpite;
+const sorteio = Math.floor(Math.random()*10) + 1;
+
+do {
+    palpite = parseInt(prompt("Digite um numero entre 1 e 10"));
+
+    if(isNaN(palpite)){
+        alert("Saindo do jogo")
+        break;
+    }
+    if(palpite !== sorteio){
+        alert("Você perdeu R$100,00")
+    }
+} while(palpite !== sorteio)
+    if (palpite === sorteio){
+        alert("parabens, você acertou e ganhou R$ 100,0")
+    }
