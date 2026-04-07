@@ -19,7 +19,6 @@
 // taxaJuros = 0.50;
 // console.log(taxaJuros)
 
-
 //var exemplo1 = "Ola dev var";
 //console.log(exemplo1);
 
@@ -45,7 +44,7 @@
 //let exemplo8;
 //console.log(exemplo8);
 
-//variavel vazia 
+//variavel vazia
 //let exemplo9 = null;
 //console.log(exemplo9)
 
@@ -90,63 +89,91 @@
 //estrutura condicional
 
 //if
-if(true){
-    console.log("é verdadeiro")
+// if(true){
+//     console.log("é verdadeiro")
+// }
+
+// //if else
+// let nome = "fiap";
+// if (nome=="fiap"){
+//     console.log("Nome verdadeiro")
+// }else{
+//     console.log("nome errado")
+// }
+
+// //if encadeado ou aninhado
+// let idade = 60;
+
+// if(idade<=13){
+//     console.log("é uma criança")
+// }else if(idade>13 && idade<=18){
+//     console.log("é um adolescente")
+// }else if(idade>18 && idade <= 59) {
+//     console.log("é um adulto")
+// }else{
+//     console.log("é um idoso")
+// }
+
+// //switch case
+
+// let times = "santos";
+
+// switch(times){
+//     case "santos":
+//         console.log("um time idoso")
+//         break;
+//     case "são paulo":
+//         console.log("Time panetone")
+//         break;
+//     case "palmeiras":
+//         console.log("sem mundial")
+//         break;
+//     case "corinthians":
+//         console.log("um time de tradição")
+//         break;
+//     default:
+//         console.log("é tão ruim quanto a seleção brasileira")
+// }
+
+// //ternaria
+
+// let salario = 100;
+// let resultado = salario == 100 ? "salario certo":"salarioerrado"
+// console.log(resultado)
+
+// let usuario = "fiap";
+// let userlogado =usuario ==="fiap"?"logado com sucesso":"usuario invalido"
+// console.log(userlogado)
+
+// function verificarparimpar(numero){
+//     return numero % 2 === 0 ? "par":"impar"
+// }
+// console.log(verificarparimpar(9))
+
+//ESTRUTURA DE REPETIÇÃO (LAÇO DE REPETIÇÃO)
+
+//for - estrutura de repetição utilizada quando sabemos previamente quantas vezes o código vai ser executado
+
+//declaração, operação, incremento
+
+for(let i = 1; i<=5; i++){
+    console.log("numero: ", i);
 }
 
-//if else
-let nome = "fiap";
-if (nome=="fiap"){
-    console.log("Nome verdadeiro")
-}else{
-    console.log("nome errado")
+// for para array
+
+const linguagens = ["java", "python", "C#", "PHP"]
+
+for(let i=0; i < linguagens.length; i++){
+    console.log("linguagem", i, ":", linguagens[i]);
 }
 
-//if encadeado ou aninhado
-let idade = 60;
-
-if(idade<=13){
-    console.log("é uma criança")
-}else if(idade>13 && idade<=18){
-    console.log("é um adolescente")
-}else if(idade>18 && idade <= 59) {
-    console.log("é um adulto")
-}else{
-    console.log("é um idoso")
+const tecnologias =["JS", "HTML", "CSS"]
+for(const tech of tecnologias){
+    console.log("Estudando",tech)
 }
 
-//switch case
-
-let times = "santos";
-
-switch(times){
-    case "santos":
-        console.log("um time idoso")
-        break;
-    case "são paulo":
-        console.log("Time panetone")
-        break;
-    case "palmeiras":
-        console.log("sem mundial")
-        break;
-    case "corinthians":
-        console.log("um time de tradição")
-        break;
-    default:
-        console.log("é tão ruim quanto a seleção brasileira")
+const carros = {marca:"Volks", modelo: "fusca", ano:1980}
+for (let dados in carros){
+    console.log(dados, ":", carros[dados])
 }
-
-//ternaria
-
-let salario = 100;
-let resultado = salario == 100 ? "salario certo":"salarioerrado"
-console.log(resultado)
-
-let usuario = "fiap";
-let userlogado =usuario ==="fiap"?"logado com sucesso":"usuario invalido"
-console.log(userlogado)
-
-function verificarparimpar(numero){
-    return numero % 2 === 0 ? "par":"impar"
-}
-console.log(verificarparimpar(9))
